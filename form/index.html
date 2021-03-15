@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script
+        src="https://www.jqueryscript.net/demo/Creating-A-Modern-Multi-Step-Form-with-jQuery-CSS3/js/jquery.easing.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form_holder">
+        <h2 class="fs-title" style="color:#fff;">steps jquery form with Icons</h2>
+        <form id="msform">
+            <ul id="progressbar">
+                <li class="active">1. Información de Contacto</li>
+                <li>2. Actividad Económica</li>
+                <li>3. Forma de Pago / Facturación</li>
+            </ul>
+
+            <fieldset>
+                <h2 class="fs-title">INFORMACIÓN GENERAL</h2>
+                <h3 class="fs-subtitle">Datos Personales</h3>
+                <div class="form-row inner-form">
+                    <div class="form-group col-md-10">
+                        <label for="nombresapellidos">Nombres y Apellidos</label>
+                        <input type="text" class="form-control" id="nombresapellidos">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="genero">Género</label>
+                        <select id="genero" class="form-control">
+                            <option selected>No Aplica...</option>
+                            <option>Femenino</option>
+                            <option>Masculino</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row inner-form">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">RUC</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="inputPassword4">
+                    </div>
+                </div>
+                <div class="form-group inner-form">
+                    <label for="inputAddress">Dirección</label>
+                    <input type="text" class="form-control" id="inputAddress">
+                </div>
+
+                <div class="form-row inner-form">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">Cantón</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="parroquia">Parroquia</label>
+                        <input type="text" class="form-control" id="parroquia">
+                    </div>
+
+                    <div class="form-group col-md-2">
+                        <label for="telefono">Teléfono</label>
+                        <input type="text" class="form-control" id="telefono">
+                    </div>
+                </div>
+                <div class="form-row inner-form">
+                    <div class="form-group col-md-6">
+                        <label for="inputNacio">Nacionalidad</label>
+                        <input type="text" class="form-control" id="inputNacio">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="lugarNaci">Lugar de Nacimiento</label>
+                        <input type="text" class="form-control" id="lugarNaci">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="feNacimiento">Fecha de Nacimiento</label>
+                        <input type="text" class="form-control" id="feNacimiento">
+                    </div>
+                </div>
+                <div class="form-row inner-form">
+                    <div class="form-group col-md-4">
+                        <label for="orgienIngre">Origen Principal de sus Ingresos</label>
+                        <select id="orgienIngre" class="form-control">
+                            <option selected>No Aplica...</option>
+                            <option>Empleado Público</option>
+                            <option>Empleado Privado</option>
+                            <option>Independiente</option>
+                            <option>Ama de casa / Estudiante</option>
+                            <option>Rentista</option>
+                            <option>Jubilado</option>
+                            <option>Remesas del exterior</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Check me out
+                        </label>
+                    </div>
+                </div>
+                <input type="text" name="email" placeholder="" />
+                <input type="text" name="pass" placeholder="" />
+                <input type="text" name="cpass" placeholder="Direccion Password" />-->
+                <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Social Profiles</h2>
+                <h3 class="fs-subtitle">Your presence on the social network</h3>
+                <input type="text" name="twitter" placeholder="Twitter" />
+                <input type="text" name="facebook" placeholder="Facebook" />
+                <input type="text" name="gplus" placeholder="Google Plus" />
+                <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Personal Details</h2>
+                <h3 class="fs-subtitle">We will never sell it</h3>
+                <input type="text" name="fname" placeholder="First Name" />
+                <input type="text" name="lname" placeholder="Last Name" />
+                <input type="text" name="phone" placeholder="Phone" />
+                <textarea name="address" placeholder="Address"></textarea>
+                <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="submit" name="submit" class="submit action-button" value="Submit" />
+            </fieldset>
+        </form>
+    </div>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
